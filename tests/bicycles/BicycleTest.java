@@ -1,14 +1,15 @@
 package bicycles;
 
+import bicycles.models.RoadBike;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BicycleTest {
-    @Test
-    public void shouldAccellerate() {
-        assertEquals(2, 2);
-    }
+//    @Test
+//    public void shouldAccellerate() {
+//        assertEquals(2, 2);
+//    }
 
     @Test
     public void shouldAccelerate() {
@@ -20,7 +21,7 @@ public class BicycleTest {
 
     @Test
     public void shouldAccelerateBrake() {
-        Bicycle bicycle = new Bicycle();
+        RoadBike bicycle = new RoadBike();
         bicycle.accelerate();
         bicycle.brake();
         assertEquals(2, bicycle.currentSpeed());
@@ -69,7 +70,24 @@ public class BicycleTest {
         bicycle.accelerate();
         bicycle.brake();
         bicycle.brake();
+        bicycle.brake();
         assertEquals(0, bicycle.currentSpeed());
 
+    }
+    @Test
+    public void shouldNotBrakeWithoutAcceleration(){
+        Bicycle bicycle = new Bicycle();
+        bicycle.brake();
+        bicycle.brake();
+        assertEquals(0, bicycle.currentSpeed());
+    }
+    @Test
+    public void shouldGetSpeedOfTwentyWhenAccelerateFourTime(){
+        Bicycle bicycle = new Bicycle();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        assertEquals(20,bicycle.currentSpeed());
     }
 }
