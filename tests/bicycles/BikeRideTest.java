@@ -1,5 +1,6 @@
 package bicycles;
 
+import bicycles.models.MountainBike;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,10 +10,10 @@ public class BikeRideTest {
 
     @Test
     public void shouldRideBikeAndGetCurrentSpeed(){
-        Bicycle bicycle= new Bicycle();
+        MountainBike bicycle= new MountainBike();
         BikeRide bikeRide = new BikeRide(bicycle);
         bikeRide.ride();
-        assertEquals(14,bikeRide.currentSpeed());
+        assertEquals(14,bikeRide.currentSpeedMountainBike());
     }
 
 }
