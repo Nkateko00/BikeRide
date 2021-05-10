@@ -9,7 +9,6 @@ public class BikeRide{
 
     public BikeRide(Bicycle bicycle){
 
-        //this.bicycle2=bicycle2;
         this.bicycle=bicycle;
     }
 
