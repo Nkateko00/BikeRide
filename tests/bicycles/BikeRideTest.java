@@ -10,10 +10,10 @@ public class BikeRideTest {
 
     @Test
     public void shouldRideBikeAndGetCurrentSpeed(){
-        MountainBike bicycle= new MountainBike();
+        Bicycle bicycle= new MountainBike();
         BikeRide bikeRide = new BikeRide(bicycle);
         bikeRide.ride();
-        assertEquals(14,bikeRide.currentSpeedMountainBike());
+        assertEquals(19,bikeRide.currentSpeed());
     }
 
 }

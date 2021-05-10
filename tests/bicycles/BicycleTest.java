@@ -127,6 +127,7 @@ public class BicycleTest {
         bicycle.brake();
         bicycle.brake();
         bicycle.brake();
+        bicycle.brake();
         assertEquals(0, bicycle.currentSpeed());
 
     }
