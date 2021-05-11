@@ -1,12 +1,13 @@
 package bicycles;
 
 import bicycles.models.MountainBike;
+import bicycles.models.RoadBike;
 
-public class BikeRide implements BikeRideI{
+public class BikeRideTwo implements BikeRideI{
 
     private final Bicycle bicycle;
 
-    public BikeRide(Bicycle bicycle) {
+    public BikeRideTwo(Bicycle bicycle) {
         this.bicycle=bicycle;
     }
 
@@ -15,28 +16,26 @@ public class BikeRide implements BikeRideI{
 
         this.bicycle.accelerate();
         this.bicycle.accelerate();
-        this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.brake();
-        this.bicycle.accelerate();
-        this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
-        }
+
+    }
 
         public int currentSpeed(){
             return
                     bicycle.currentSpeed();
         }
 
-        public static void main(String[] args) {
-            Bicycle bicycle= new MountainBike();
-            BikeRide bikeRide = new BikeRide(bicycle);
-            bikeRide.ride(bicycle);
-            System.out.println(bikeRide.currentSpeed());
+    public static void main(String[] args) {
+        Bicycle bicycle= new RoadBike();
+        BikeRide bikeRide = new BikeRide(bicycle);
+        bikeRide.ride(bicycle);
+        System.out.println(bikeRide.currentSpeed());
 
-        }
+    }
     }
 
