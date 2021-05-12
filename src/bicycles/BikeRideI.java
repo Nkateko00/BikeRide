@@ -1,5 +1,6 @@
 package bicycles;
 
-public interface BikeRideI { ;
+public interface BikeRideI {
    void ride(Bicycle bicycle);
+
 }

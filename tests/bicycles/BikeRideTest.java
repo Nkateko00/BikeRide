@@ -19,7 +19,7 @@ public class BikeRideTest {
     @Test
     public void shouldRideBikeAndGetCurrentSpeedRideTwo(){
         Bicycle bicycle= new RoadBike();
-        BikeRide bikeRide = new BikeRide(bicycle);
+        BikeRideTwo bikeRide = new BikeRideTwo(bicycle);
         bikeRide.ride(bicycle);
         assertEquals(76,bikeRide.currentSpeed());
     }

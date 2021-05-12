@@ -16,5 +16,10 @@ public class RoadBike extends BicycleBase {
         changeSpeed(-4);
     }
 
+//    @Override
+    public int currentSpeed1() {
+        return currentSpeed();
+    }
 }
+//    @Override
 

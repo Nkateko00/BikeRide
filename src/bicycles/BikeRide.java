@@ -7,6 +7,7 @@ public class BikeRide implements BikeRideI{
     private final Bicycle bicycle;
 
     public BikeRide(Bicycle bicycle) {
+
         this.bicycle=bicycle;
     }
 
@@ -15,20 +16,18 @@ public class BikeRide implements BikeRideI{
 
         this.bicycle.accelerate();
         this.bicycle.accelerate();
-        this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.brake();
         this.bicycle.accelerate();
-        this.bicycle.accelerate();
-        this.bicycle.accelerate();
         this.bicycle.brake();
-        this.bicycle.accelerate();
+        this.bicycle.brake();
+        this.bicycle.brake();
         this.bicycle.accelerate();
         }
 
         public int currentSpeed(){
             return
-                    bicycle.currentSpeed();
+                   bicycle.currentSpeed();
         }
 
         public static void main(String[] args) {

@@ -1,41 +1,39 @@
 package bicycles;
 
-import bicycles.models.MountainBike;
-import bicycles.models.RoadBike;
+import bicycles.models.Tandem;
 
-public class BikeRideTwo implements BikeRideI{
-
+public class BikeRideThree implements BikeRideI{
     private final Bicycle bicycle;
 
-    public BikeRideTwo(Bicycle bicycle) {
-
+    public BikeRideThree(Bicycle bicycle) {
         this.bicycle=bicycle;
     }
-
     @Override
     public void ride(Bicycle bicycle) {
 
         this.bicycle.accelerate();
         this.bicycle.accelerate();
-        this.bicycle.brake();
-        this.bicycle.brake();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
-
+        this.bicycle.accelerate();
+        this.bicycle.brake();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
     }
-        public int currentSpeed(){
-            return
-                    bicycle.currentSpeed();
-        }
+
+    public int currentSpeed() {
+        return bicycle.currentSpeed();
+    }
 
     public static void main(String[] args) {
-        Bicycle bicycle= new RoadBike();
-        BikeRideTwo bikeRide = new BikeRideTwo(bicycle);
+        Bicycle bicycle = new Tandem();
+        BikeRideThree bikeRide = new BikeRideThree(bicycle);
         bikeRide.ride(bicycle);
         System.out.println(bikeRide.currentSpeed());
-
     }
-    }
-
+}
