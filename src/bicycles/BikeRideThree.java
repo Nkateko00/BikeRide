@@ -11,6 +11,7 @@ public class BikeRideThree implements BikeRideI{
     @Override
     public void ride(Bicycle bicycle) {
 
+        //fastest ride
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
