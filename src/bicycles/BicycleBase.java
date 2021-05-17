@@ -1,17 +1,20 @@
 package bicycles;
 
-public abstract class BicycleBase implements Bicycle{
+public abstract class BicycleBase implements Bicycle {
 
-    private int speed ;
+    private int speed;
 
-    protected int changeSpeed(int x){
+    protected int changeSpeed(int x) {
         this.speed += x;
         return speed;
 
     }
-    public void stop(){
-       speed = 0;
-    }    public int currentSpeed(){
+
+    public void stop() {
+        speed = 0;
+    }
+
+    public int currentSpeed() {
 
 
         if (speed > 0) {

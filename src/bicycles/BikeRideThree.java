@@ -6,6 +6,7 @@ public class BikeRideThree implements BikeRideI{
     private final Bicycle bicycle;
 
     public BikeRideThree(Bicycle bicycle) {
+
         this.bicycle=bicycle;
     }
     @Override
