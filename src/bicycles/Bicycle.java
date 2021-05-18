@@ -6,5 +6,6 @@ public interface Bicycle {
     public void brake();
     public void stop ();
     public int currentSpeed();
-    public void getBicycleType();
+    public BicycleType getBicycleType();
+
 }

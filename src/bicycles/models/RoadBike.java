@@ -1,6 +1,7 @@
 package bicycles.models;
 
 import bicycles.BicycleBase;
+import bicycles.BicycleType;
 
 public class RoadBike extends BicycleBase {
 
@@ -16,10 +17,14 @@ public class RoadBike extends BicycleBase {
         changeSpeed(-4);
     }
 
-//    @Override
-    public int currentSpeed1() {
-        return currentSpeed();
+    @Override
+    public BicycleType getBicycleType() {
+        //enums
+        return BicycleType.RoadBike;
     }
+
+    //    @Override
+
 }
 //    @Override
 
