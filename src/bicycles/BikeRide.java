@@ -4,7 +4,7 @@ import bicycles.models.MountainBike;
 
 public class BikeRide implements BikeRideI{
 
-    private final Bicycle bicycle;
+    public  Bicycle bicycle;
 
     public BikeRide(Bicycle bicycle) {
 
@@ -27,7 +27,7 @@ public class BikeRide implements BikeRideI{
 
         public int currentSpeed(){
             return
-                   bicycle.currentSpeed();
+                   this.bicycle.currentSpeed();
         }
 
         public static void main(String[] args) {

@@ -27,7 +27,7 @@ public class BikeRideTwo implements BikeRideI{
     }
         public int currentSpeed(){
             return
-                    bicycle.currentSpeed();
+                    this.bicycle.currentSpeed();
         }
 
     public static void main(String[] args) {

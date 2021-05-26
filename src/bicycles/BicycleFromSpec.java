@@ -1,8 +1,8 @@
 package bicycles;
-
+import bicycles.*;
 public class BicycleFromSpec extends BicycleBase{
 
-    private BicycleSpecification bicycleSpec;
+    public BicycleSpecification bicycleSpec;
 
     public  BicycleFromSpec(BicycleSpecification bicycleSpec){
         //getBicycleSpecification
